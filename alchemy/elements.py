@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-def create_earth() -> None:
-	return ("Earth element created")
+def create_earth() -> str:
+    return ("Earth element created")
 
-def create_air() -> None:
-	return ("Air element created")
+
+def create_air() -> str:
+    return ("Air element created")

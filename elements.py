@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-def create_fire() -> None:
-	return ("Fire element created")
+def create_fire() -> str:
+    return ("Fire element created")
 
-def create_water() -> None:
-	return ("Water element created")
+
+def create_water() -> str:
+    return ("Water element created")
