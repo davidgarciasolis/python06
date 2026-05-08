@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from alchemy.elements import create_air as create_air, create_earth as create_earth
+from alchemy.elements import create_air, create_earth
 from elements import create_fire as create_fire, create_water as create_water
 
 

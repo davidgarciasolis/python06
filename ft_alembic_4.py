@@ -8,7 +8,8 @@ def main() -> None:
     print("Testing create_air: Air element created")
     print("Now show that not all functions can be reached")
     print("This will raise an exception!")
-    print(f"Testing create_air: {alchemy.create_earth()}")  # type: ignore[attr-defined]
+    print(f"Testing create_air: "
+          f"{alchemy.create_earth()}")  # type: ignore[attr-defined]
 
 
 if __name__ == "__main__":

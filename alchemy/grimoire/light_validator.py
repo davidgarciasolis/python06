@@ -1,12 +1,17 @@
 #!/usr/bin/python3
-from alchemy.grimoire import light_spellbook
-
 
 def validate_ingredients(ingredients: str) -> str:
-    allowed = light_spellbook.light_spell_allowed_ingredients()
-    ingredients_lower = ingredients.lower()
+    from .light_spellbook import light_spell_allowed_ingredients
+    allowed_ingredients = light_spell_allowed_ingredients()
+    lower_ingredients = ingredients.lower()
 
-    is_valid = any(item.lower() in ingredients_lower for item in allowed)
+    valid = False
+    for allowed_ingredient in allowed_ingredients:
+        if allowed_ingredient in lower_ingredients:
+            valid = True
+            break
 
-    status = "VALID" if is_valid else "INVALID"
-    return f"{ingredients} - {status}"
+    if valid:
+        return f"{ingredients} - VALID"
+
+    return f"{ingredients} - INVALID"
