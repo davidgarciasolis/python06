@@ -1,12 +1,11 @@
 #!/usr/bin/python3
-import alchemy.transmutation.recipes
+from alchemy.transmutation.recipes import lead_to_gold
 
 
 def main() -> None:
     print("=== Transmutation 0 ===")
     print("Using file alchemy/transmutation/recipes.py directly")
-    res = alchemy.transmutation.recipes.lead_to_gold()
-    print(f"Testing lead to gold: {res}")
+    print(f"Testing lead to gold: {lead_to_gold()}")
 
 
 if __name__ == "__main__":

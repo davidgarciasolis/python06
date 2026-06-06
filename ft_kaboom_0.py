@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from alchemy.grimoire.light_spellbook import light_spell_record
+from alchemy.grimoire import light_spell_record
 
 
 def main() -> None:
